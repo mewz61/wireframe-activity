@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Knockout Zone is a premium MMA-inspired digital arena for combat sports fans, gaming gear, rankings, and community highlights.">
+  <meta name="theme-color" content="#05070d">
+  <title>Knockout Zone</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="dns-prefetch" href="https://unpkg.com">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">KNOCKOUT ZONE</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="rankings.html">Rankings</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+    <button class="ufc-badge">UFC</button>
+  </header>
+
+  <main class="hero">
+    <div class="hero-inner">
+      <section class="hero-copy">
+        <div class="hero-eyebrow">OCTAGON READY</div>
+        <h1 class="hero-heading">Step Into the Knockout Zone</h1>
+        <p class="hero-text">A premium UFC-inspired arena built for champions. Train, compete and dominate with the MMA idle fighter at center stage.</p>
+        <div class="hero-actions">
+          <button class="btn" type="button" onclick="playWalk()">Start Walk</button>
+          <button class="btn btn-alt" type="button" onclick="playIdle()">Reset Idle</button>
+          <button class="btn" type="button" onclick="playVictory()">Trigger Victory</button>
+        </div>
+      </section>
+
+      <section class="hero-panel">
+        <div class="hero-stats">
+          <div class="stat-card">
+            <strong>98%</strong>
+            <span>Accuracy in knockout combos</span>
+          </div>
+          <div class="stat-card">
+            <strong>5K+</strong>
+            <span>Active fighters in the arena</span>
+          </div>
+          <div class="stat-card">
+            <strong>1.3M</strong>
+            <span>Live matches fought this week</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <h3>Exclusive MMA Idle Animation</h3>
+          <p>The homepage fighter runs a polished idle stance that keeps the octagon alive while you browse.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <section class="content-container">
+    <h2 class="section-title">Fight Tech & Gear</h2>
+    <p class="section-copy">Equip your character with elite fight kit designed for the most intense cinematic combat experience.</p>
+    <div class="features-grid">
+      <article class="feature-card">
+        <h3>Pro Gloves</h3>
+        <p>Engineered for power, precision and impact. Perfect for the top of the leaderboard.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Battle Kit</h3>
+        <p>High-performance armor with premium UFC detailing for the ultimate fight aesthetic.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Elite Training</h3>
+        <p>Unlock cinematic animations, improved footwork, and fast-response controls.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="content-container">
+    <h2 class="section-title">Arena Highlights</h2>
+    <div class="features-grid">
+      <article class="feature-card">
+        <h3>Global Rankings</h3>
+        <p>Track the top fighters and see who owns the octagon in real-time.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Community Challenges</h3>
+        <p>Join exclusive leagues, upload your best clips, and fight for champion rewards.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Live Events</h3>
+        <p>Access in-game promotions and tournament schedules directly from the Knockout Zone.</p>
+      </article>
+    </div>
+  </section>
+
+  <div id="fighter"></div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
+
+

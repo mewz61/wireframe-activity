@@ -1,0 +1,7 @@
+/* Desktop companion stylesheet for planning evidence. */
+
+@media (min-width: 1024px) {
+  body[data-layout="desktop"] .product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

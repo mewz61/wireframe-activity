@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse community fight highlights, gallery clips, and victory moments in Knockout Zone.">
+  <meta name="theme-color" content="#05070d">
+  <title>Knockout Zone - Gallery</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="dns-prefetch" href="https://unpkg.com">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">KNOCKOUT ZONE</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="rankings.html">Rankings</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+    <button class="ufc-badge">UFC</button>
+  </header>
+
+  <main class="content-container">
+    <h1 class="page-title">Community Highlights</h1>
+    <p class="section-copy">Share your most explosive finishes and browse the best arena clips from the Knockout Zone.</p>
+
+    <div class="gallery-grid">
+      <article class="media-card image-card">
+        <img src="pic-vid/pic1.jpg" alt="Knockout highlight 1" loading="lazy" decoding="async" width="320" height="240">
+      </article>
+      <article class="media-card image-card">
+        <img src="pic-vid/pic2.jpg" alt="Knockout highlight 2" loading="lazy" decoding="async" width="320" height="240">
+      </article>
+      <article class="media-card video-card">
+        <video controls muted loop preload="metadata">
+          <source src="pic-vid/vid1.mp4" type="video/mp4">
+        </video>
+      </article>
+      <article class="media-card image-card">
+        <img src="pic-vid/pic3.jpg" alt="Knockout highlight 3" loading="lazy" decoding="async" width="320" height="240">
+      </article>
+      <article class="media-card image-card">
+        <img src="pic-vid/pic4.jpg" alt="Knockout highlight 4" loading="lazy" decoding="async" width="320" height="240">
+      </article>
+      <article class="media-card video-card">
+        <video controls muted loop preload="metadata">
+          <source src="pic-vid/vid2.mp4" type="video/mp4">
+        </video>
+      </article>
+      <article class="media-card image-card">
+        <img src="pic-vid/pic5.jpg" alt="Knockout highlight 5" loading="lazy" decoding="async" width="320" height="240">
+      </article>
+      <article class="media-card image-card">
+        <img src="pic-vid/pic6.jpg" alt="Knockout highlight 6" loading="lazy" decoding="async" width="320" height="240">
+      </article>
+      <article class="media-card image-card">
+        <img src="pic-vid/pic7.jpg" alt="Knockout highlight 7" loading="lazy" decoding="async" width="320" height="240">
+      </article>
+      <article class="media-card image-card">
+        <img src="pic-vid/pic8.jpg" alt="Knockout highlight 8" loading="lazy" decoding="async" width="320" height="240">
+      </article>
+    </div>
+    <div class="upload-card">
+      <h3>Upload Victory Clips</h3>
+      <p>Submit your best knockout clip and trigger the arena success animation.</p>
+      <button class="btn" type="button" onclick="playSuccess(); alert('Upload successful!')">Upload Clip</button>
+    </div>
+  </main>
+
+  <div id="fighter"></div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
+
+

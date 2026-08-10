@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop premium fight gear, gaming accessories, and arena essentials in Knockout Zone.">
+  <meta name="theme-color" content="#05070d">
+  <title>Knockout Zone - Shop</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="dns-prefetch" href="https://unpkg.com">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">KNOCKOUT ZONE</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html" class="active">Shop</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="rankings.html">Rankings</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+    <button class="ufc-badge">UFC</button>
+  </header>
+
+  <main class="content-container">
+    <h1 class="page-title">Arena Gear & Fighter Kits</h1>
+    <p class="section-copy">Browse elite equipment designed for the Knockout Zone. Perfect for game-ready fighters and high-stakes battles.</p>
+
+    <div class="shop-actions">
+      <p class="section-copy">Cart items: <strong><span data-cart-count>0</span></strong></p>
+      <a class="btn" href="cart.html">View Cart</a>
+    </div>
+
+    <div id="cartFeedback" class="cart-feedback" role="status" aria-live="polite"></div>
+
+    <section id="productDetailPanel" class="product-detail-panel" aria-live="polite">
+      <p class="detail-placeholder">Select a product to see its features, pricing, and add-to-cart options.</p>
+    </section>
+
+    <div id="productGrid" class="shop-grid"></div>
+  </main>
+
+  <div id="fighter"></div>
+  <script src="js/script.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

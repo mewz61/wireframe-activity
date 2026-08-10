@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the Knockout Zone community for challenges, highlights, and fight-related events.">
+  <meta name="theme-color" content="#05070d">
+  <title>Knockout Zone - Community</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="dns-prefetch" href="https://unpkg.com">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">KNOCKOUT ZONE</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="community.html" class="active">Community</a></li>
+      <li><a href="rankings.html">Rankings</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+    <button class="ufc-badge">UFC</button>
+  </header>
+
+  <main class="content-container">
+    <h1 class="page-title">Fighter Community Hub</h1>
+    <p class="section-copy">Join the Knockout Zone network to share tactics, stream highlights, and compete in ranked tournaments.</p>
+
+    <div class="community-grid">
+      <div class="feed-card">
+        <div class="feed-title">Weekly Tournaments</div>
+        <div class="feed-meta">Submit your fighter and compete across divisions for rewards.</div>
+      </div>
+      <div class="feed-card">
+        <div class="feed-title">Strategy Sessions</div>
+        <div class="feed-meta">Learn combo timing, defense setups, and knockout counters from top competitors.</div>
+      </div>
+      <div class="feed-card">
+        <div class="feed-title">Live Match Highlights</div>
+        <div class="feed-meta">Watch the latest clip drops, and rate the most epic finishes.</div>
+      </div>
+      <div class="feed-card">
+        <div class="feed-title">Community Rankings</div>
+        <div class="feed-meta">Track your standing among fighters and push for the next tier.</div>
+      </div>
+    </div>
+  </main>
+
+  <div id="fighter"></div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
+

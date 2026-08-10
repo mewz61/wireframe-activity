@@ -1,0 +1,10 @@
+/* Mobile-first companion stylesheet for planning evidence. */
+
+:root {
+  --mobile-note: "mobile-first baseline";
+}
+
+/* Example selector usage kept intentionally small. */
+body[data-layout="mobile"] .nav-list {
+  gap: 0.5rem;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="See top-ranked fighters, arena leaders, and competitive highlights in Knockout Zone.">
+  <meta name="theme-color" content="#05070d">
+  <title>Knockout Zone - Rankings</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="dns-prefetch" href="https://unpkg.com">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">KNOCKOUT ZONE</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="rankings.html" class="active">Rankings</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+    <button class="ufc-badge">UFC</button>
+  </header>
+
+  <main class="content-container">
+    <h1 class="page-title">Global Leaderboard</h1>
+    <p class="section-copy">Track the top fighters in the Knockout Zone and see who dominates the octagon.</p>
+
+    <section class="leaderboard-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Fighter</th>
+            <th>Division</th>
+            <th>Record</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#1</td>
+            <td>Champ_Knockout</td>
+            <td>Welterweight</td>
+            <td>42 - 2</td>
+          </tr>
+          <tr>
+            <td>#2</td>
+            <td>IronGuard99</td>
+            <td>Middleweight</td>
+            <td>38 - 5</td>
+          </tr>
+          <tr>
+            <td>#3</td>
+            <td>CounterKing</td>
+            <td>Lightweight</td>
+            <td>31 - 4</td>
+          </tr>
+          <tr>
+            <td>#4</td>
+            <td>BladeStrike</td>
+            <td>Featherweight</td>
+            <td>35 - 6</td>
+          </tr>
+          <tr>
+            <td>#5</td>
+            <td>ShadowSlam</td>
+            <td>Light Heavyweight</td>
+            <td>28 - 3</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <div id="fighter"></div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
+
+
