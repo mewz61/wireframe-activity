@@ -13,10 +13,6 @@ export let defaultAnimation = 'walking';
 const fbxLoader = new FBXLoader();
 
 function getAssetBase() {
-  const path = window.location.pathname.replace(/\\/g, '/').toLowerCase();
-  if (path.includes('/html/pages/')) return '../../';
-  if (path.includes('/html/')) return '../';
-  if (path.includes('/pages/')) return '../';
   return './';
 }
 
