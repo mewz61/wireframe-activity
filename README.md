@@ -3,22 +3,26 @@
 This project provides a complete static e-commerce implementation with responsive pages, DOM-based cart behavior, and integrated animated fighter background.
 
 ## Folder Structure
-- Pages/
+- Root pages
   - index.html
   - products.html
   - cart.html
   - about.html
   - contact.html
+  - community.html
+  - rankings.html
+  - gallery.html
+  - shop.html
 - css/
   - style.css
 - js/
   - script.js
-- media/
-  - images/
-  - videos/
-- evidence/
-  - accessibility-audit.md
+  - main.js
+  - character.js
+- pic-vid/
 - images/
+- media/
+- evidence/
 - styles/
   - mobile.css
   - desktop.css
@@ -44,7 +48,7 @@ python -m http.server 5500
 ```
 
 Then open:
-- http://localhost:5500/Pages/index.html
+- http://localhost:5500/index.html
 
 ## Cart Behavior
 Cart data is stored in browser localStorage under key `mewz_cart_v1`.
