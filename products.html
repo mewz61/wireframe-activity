@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knockout Zone Store - Products</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="logo">KNOCKOUT ZONE</div>
+      <nav>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link active" href="products.html">Products</a></li>
+          <li><a class="nav-link" href="cart.html">Cart</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="cart-chip" href="cart.html">Cart: <span data-cart-count>0</span></a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section>
+      <h1 class="section-title">Product Listing</h1>
+      <p class="section-copy">A curated set of fight-ready gear is available here. Each card includes image, product name, price, category, and Add to Cart actions.</p>
+    </section>
+
+    <section class="products-layout">
+      <div id="productGrid" class="product-grid"></div>
+      <aside id="productDetailPanel" class="detail-panel" aria-live="polite"></aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <span>© 2026 Knockout Zone Store</span>
+      <span>View details on card click</span>
+    </div>
+  </footer>
+
+  <div id="fighter"></div>
+  <script src="js/script.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knockout Zone Store - Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="logo">KNOCKOUT ZONE</div>
+      <nav>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="products.html">Products</a></li>
+          <li><a class="nav-link" href="cart.html">Cart</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="cart-chip" href="cart.html">Cart: <span data-cart-count>0</span></a>
+    </div>
+  </header>
+
+  <main class="page columns-2">
+    <section class="info-panel">
+      <h1 class="section-title">Contact Us</h1>
+      <p class="section-copy">Have a question about products or orders? Send us a message.</p>
+      <img src="media/images/pic8.jpg" alt="Knockout Zone support">
+    </section>
+
+    <section class="form-panel">
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button class="btn" type="submit">Send Message</button>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <span>© 2026 Knockout Zone Store</span>
+      <span>Basic JavaScript form validation included</span>
+    </div>
+  </footer>
+
+  <div id="fighter"></div>
+  <script src="js/script.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
