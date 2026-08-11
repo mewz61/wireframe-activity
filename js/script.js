@@ -1,12 +1,23 @@
+function getAssetBase() {
+  const path = window.location.pathname.replace(/\\/g, '/').toLowerCase();
+  if (path.includes('/html/pages/')) return '../../';
+  if (path.includes('/html/')) return '../';
+  if (path.includes('/pages/')) return '../';
+  return './';
+}
+
+const ASSET_BASE = getAssetBase();
+const withAssetBase = (path) => `${ASSET_BASE}${path}`;
+
 const PRODUCTS = [
-  { id: 1, name: 'Pro UFC-Style Headgear', price: 49.99, category: 'Protection', image: 'images/gear%201.jpg', description: 'High-grade leather with impact-absorbing padding for serious training.' },
-  { id: 2, name: 'UFC-Style Leather Gloves', price: 39.99, category: 'Gloves', image: 'images/gear%202.avif', description: 'Premium breathable protection for wrists and knuckles during intense sparring.' },
-  { id: 3, name: 'Pro MMA Gloves', price: 59.99, category: 'Gloves', image: 'images/gear%203.avif', description: 'Full-face shock protection for hard training sessions and fight prep.' },
-  { id: 4, name: 'Knockout Fight Shorts', price: 34.99, category: 'Apparel', image: 'images/ps6.webp', description: 'Lightweight split-side trunks designed for maximum mobility.' },
-  { id: 5, name: 'Playstation 5 Controller', price: 59.99, category: 'Gaming', image: 'images/ps1.webp', description: 'Wireless controller built for fast response and high-performance play.' },
-  { id: 6, name: 'UFC 6', price: 59.99, category: 'Gaming', image: 'images/ps8.webp', description: 'The latest installment of the UFC video game series for fans and competitors.' },
-  { id: 7, name: 'Playstation 5 3D Headset', price: 149.99, category: 'Audio', image: 'images/ps7.jpg', description: 'Immersive 3D audio experience for your next training or gaming session.' },
-  { id: 8, name: 'Muay Thai Shin Guards', price: 44.99, category: 'Protection', image: 'images/gear%205.jpg', description: 'Multi-layered foam armor made for heavy kick checks and sparring rounds.' }
+  { id: 1, name: 'Pro UFC-Style Headgear', price: 49.99, category: 'Protection', image: withAssetBase('images/gear%201.jpg'), description: 'High-grade leather with impact-absorbing padding for serious training.' },
+  { id: 2, name: 'UFC-Style Leather Gloves', price: 39.99, category: 'Gloves', image: withAssetBase('images/gear%202.avif'), description: 'Premium breathable protection for wrists and knuckles during intense sparring.' },
+  { id: 3, name: 'Pro MMA Gloves', price: 59.99, category: 'Gloves', image: withAssetBase('images/gear%203.avif'), description: 'Full-face shock protection for hard training sessions and fight prep.' },
+  { id: 4, name: 'Knockout Fight Shorts', price: 34.99, category: 'Apparel', image: withAssetBase('images/ps6.webp'), description: 'Lightweight split-side trunks designed for maximum mobility.' },
+  { id: 5, name: 'Playstation 5 Controller', price: 59.99, category: 'Gaming', image: withAssetBase('images/ps1.webp'), description: 'Wireless controller built for fast response and high-performance play.' },
+  { id: 6, name: 'UFC 6', price: 59.99, category: 'Gaming', image: withAssetBase('images/ps8.webp'), description: 'The latest installment of the UFC video game series for fans and competitors.' },
+  { id: 7, name: 'Playstation 5 3D Headset', price: 149.99, category: 'Audio', image: withAssetBase('images/ps7.jpg'), description: 'Immersive 3D audio experience for your next training or gaming session.' },
+  { id: 8, name: 'Muay Thai Shin Guards', price: 44.99, category: 'Protection', image: withAssetBase('images/gear%205.jpg'), description: 'Multi-layered foam armor made for heavy kick checks and sparring rounds.' }
 ];
 
 const CART_KEY = 'mewz_cart_v1';

@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Knockout Zone Store - Contact</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <title>Knockout Zone Store - Cart</title>
+  <script>
+    // Keep users on the root-themed cart to avoid layout switching.
+    window.location.replace('../cart.html');
+  </script>
+  <link rel="stylesheet" href="../../css/style.css">
   <script type="importmap">
     {
       "imports": {
@@ -31,39 +35,24 @@
     </div>
   </header>
 
-  <main class="page columns-2">
-    <section class="info-panel">
-      <h1 class="section-title">Contact Us</h1>
-      <p class="section-copy">Have a question about products or orders? Send us a message.</p>
-      <img src="../media/images/pic8.jpg" alt="Knockout Zone support">
-    </section>
-
-    <section class="form-panel">
-      <form id="contactForm" novalidate>
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required>
-
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
-
-        <button class="btn" type="submit">Send Message</button>
-        <p id="formStatus" class="form-status" aria-live="polite"></p>
-      </form>
+  <main class="page">
+    <section class="cart-panel">
+      <h1 class="section-title">Shopping Cart</h1>
+      <p class="section-copy">You can add items, remove items, and increase/decrease quantity. Total updates dynamically.</p>
+      <div id="cartItems"></div>
+      <p class="cart-total">Total: <span id="cartTotal">£0.00</span></p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-wrap">
       <span>© 2026 Knockout Zone Store</span>
-      <span>Basic JavaScript form validation included</span>
+      <span>DOM cart logic only</span>
     </div>
   </footer>
 
   <div id="fighter"></div>
-  <script src="../js/script.js"></script>
-  <script type="module" src="../main.js"></script>
+  <script src="../../js/script.js"></script>
+  <script type="module" src="../../js/main.js"></script>
 </body>
 </html>

@@ -14,7 +14,10 @@ const fbxLoader = new FBXLoader();
 
 function getAssetBase() {
   const path = window.location.pathname.replace(/\\/g, '/').toLowerCase();
-  return path.includes('/pages/') ? '../' : './';
+  if (path.includes('/html/pages/')) return '../../';
+  if (path.includes('/html/')) return '../';
+  if (path.includes('/pages/')) return '../';
+  return './';
 }
 
 let mouseX = 0;
@@ -195,4 +198,3 @@ export function updateCharacter(delta) {
     characterMesh.rotation.x += (targetX - characterMesh.rotation.x) * 0.05;
   }
 }
-

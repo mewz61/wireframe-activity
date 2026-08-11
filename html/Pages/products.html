@@ -3,12 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Knockout Zone Store - Cart</title>
-  <script>
-    // Keep users on the root-themed cart to avoid layout switching.
-    window.location.replace('../cart.html');
-  </script>
-  <link rel="stylesheet" href="../css/style.css">
+  <title>Knockout Zone Store - Products</title>
+  <link rel="stylesheet" href="../../css/style.css">
   <script type="importmap">
     {
       "imports": {
@@ -36,23 +32,26 @@
   </header>
 
   <main class="page">
-    <section class="cart-panel">
-      <h1 class="section-title">Shopping Cart</h1>
-      <p class="section-copy">You can add items, remove items, and increase/decrease quantity. Total updates dynamically.</p>
-      <div id="cartItems"></div>
-      <p class="cart-total">Total: <span id="cartTotal">£0.00</span></p>
+    <section>
+      <h1 class="section-title">Product Listing</h1>
+      <p class="section-copy">12 products are listed below. Each card includes image, product name, price, category, and Add to Cart.</p>
+    </section>
+
+    <section class="products-layout">
+      <div id="productGrid" class="product-grid"></div>
+      <aside id="productDetailPanel" class="detail-panel" aria-live="polite"></aside>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-wrap">
       <span>© 2026 Knockout Zone Store</span>
-      <span>DOM cart logic only</span>
+      <span>View details on card click</span>
     </div>
   </footer>
 
   <div id="fighter"></div>
-  <script src="../js/script.js"></script>
-  <script type="module" src="../main.js"></script>
+  <script src="../../js/script.js"></script>
+  <script type="module" src="../../js/main.js"></script>
 </body>
 </html>
